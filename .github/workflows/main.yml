@@ -1,11 +1,13 @@
 name: CI/CD
 on:
-  push:
-    branches:
-    - master
-    paths:
-    - "src/**"
-    - "book.toml"
+  [push]
+  # push:
+  #   branches:
+  #   - master
+  #   paths:
+  #   - "src/**"
+  #   - "book.toml"
+  workflow_dispatch:
 
 jobs:
   deploy:
