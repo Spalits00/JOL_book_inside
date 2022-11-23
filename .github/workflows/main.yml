@@ -1,11 +1,5 @@
 name: CI/CD
-on: 
-  push:
-  workflow_dispatch:
-    inputs:
-      build-id:
-        required: true
-        type: string
+on: [push]
 
 jobs:
   build:
@@ -34,7 +28,3 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v1
-      with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        external_repository: Spalits00/JOL_book
-        publish_branch: main
