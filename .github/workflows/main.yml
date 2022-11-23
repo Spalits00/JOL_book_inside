@@ -23,5 +23,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.ref == 'refs/heads/main' }}
       with:
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        external_repository: Spalits00/JOL_book
+        publish_branch: master
         publish_dir: ./book
