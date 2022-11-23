@@ -7,6 +7,10 @@ on:
     - "src/**"
     - "book.toml"
   workflow_dispatch:
+    inputs:
+      build-id:
+        required: true
+        type: string
 
 jobs:
   deploy:
