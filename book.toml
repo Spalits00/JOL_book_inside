@@ -1,0 +1,6 @@
+[book]
+authors = ["Spalits00"]
+language = "ja"
+multilingual = false
+src = "src"
+title = "JOLBook"
