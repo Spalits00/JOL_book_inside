@@ -1,5 +1,12 @@
 name: CI/CD
-on: [push]
+on: 
+  push:
+    branches:
+    - master
+    paths:
+    - "src/**"
+    - "book.toml"
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -15,7 +22,7 @@ jobs:
     - run: mdbook build
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
-      if: ${{ github.ref == 'refs/heads/main' }}
+      # if: ${{ github.ref == 'refs/heads/main' }}
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         github_token: ${{ secrets.GITHUB_TOKEN }}
