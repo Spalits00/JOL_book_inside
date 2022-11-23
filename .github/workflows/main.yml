@@ -1,16 +1,8 @@
 name: CI/CD
-on:
-  [push]
-  # push:
-  #   branches:
-  #   - master
-  #   paths:
-  #   - "src/**"
-  #   - "book.toml"
-  workflow_dispatch:
+on: [push]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -21,12 +13,18 @@ jobs:
       with:
         mdbook-version: '0.4.21'
     - run: mdbook build
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      if: ${{ github.ref == 'refs/heads/main' }}
+    - name: Build gh-pages to artifact
+      uses: actions/upload-pages-artifact@v1
+      # if: ${{ github.ref == 'refs/heads/main' }}
       with:
-        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        external_repository: Spalits00/JOL_book
-        publish_branch: main
-        publish_dir: ./book
+        path: ./book
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v1
