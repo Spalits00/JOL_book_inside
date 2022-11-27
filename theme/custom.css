@@ -1,0 +1,42 @@
+body .page-wrapper .page .content main {
+  font-family: FOT_DNPShueiMinPr6N-L, YuMincho, serif;
+}
+body .page-wrapper .page .content main strong {
+  font-family: FOT_DNPShueiGoKinStd-L, mplus-2c-regular, ui-sans-serif;
+}
+body .page-wrapper .page .content main h1,
+body .page-wrapper .page .content main h2 {
+  font-family: CometStd-B, makinas, fantasy;
+}
+body .page-wrapper .page .menu-bar .menu-title {
+  font-family: CometStd-B, makinas, fantasy;
+}
+body .sidebar-scrollbox {
+  padding-left: 1em !important;
+}
+body .sidebar-scrollbox .chapter .part-title {
+  font-family: FOT_DNPShueiGoKinStd-L, mplus-2c-regular, ui-sans-serif;
+  font-weight: 400;
+}
+body .sidebar-scrollbox .chapter .chapter-item {
+  margin-left: 1em;
+  font-family: HiraginoSans-W2, mplus-2c-light, ui-sans-serif;
+}
+body .sidebar-scrollbox .chapter .chapter-item strong {
+  font-weight: 400;
+}
+
+img {
+  max-width: 35%;
+}
+
+img[alt=spa_icon] {
+  width: 18em;
+  border-radius: 9em;
+}
+
+kenten {
+  text-emphasis: filled sesame;
+}
+
+/*# sourceMappingURL=custom.css.map */

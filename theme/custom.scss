@@ -1,0 +1,63 @@
+body {
+    .page-wrapper {
+        .page {
+            .content {
+                main {
+                    font-family: FOT_DNPShueiMinPr6N-L, YuMincho, serif;
+
+                    strong {
+                        font-family: FOT_DNPShueiGoKinStd-L, mplus-2c-regular, ui-sans-serif;
+                    }
+
+                    h1,
+                    h2 {
+                        font-family: CometStd-B, makinas, fantasy;
+                    }
+                }
+            }
+
+            .menu-bar {
+                .menu-title {
+                    font-family: CometStd-B, makinas, fantasy;
+                }
+            }
+        }
+
+        // .nav-wide-wrapper{
+
+        // }
+    }
+
+    .sidebar-scrollbox {
+        padding-left: 1em !important;
+
+        .chapter {
+            .part-title {
+                font-family: FOT_DNPShueiGoKinStd-L, mplus-2c-regular, ui-sans-serif;
+                font-weight: 400;
+            }
+
+            .chapter-item {
+                margin-left: 1em;
+                font-family: HiraginoSans-W2, mplus-2c-light, ui-sans-serif;
+
+                strong {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+img {
+    max-width: 35%;
+}
+
+img[alt="spa_icon"] {
+    width: 18em;
+    border-radius: 9em;
+}
+
+kenten {
+    text-emphasis: filled sesame;
+}
