@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+
 body {
     .page-wrapper {
         .page {
             .content {
                 main {
-                    font-family: FOT_DNPShueiMinPr6N-L, YuMincho, serif;
+                    font-family: 'Times New Roman', Times, 'Noto Serif JP', serif;
 
                     strong {
-                        font-family: FOT_DNPShueiGoKinStd-L, mplus-2c-regular, ui-sans-serif;
+                        font-family: 'Noto Sans JP', ui-sans-serif;
+                        font-weight: 500;
                     }
 
                     h1,
@@ -33,17 +37,19 @@ body {
 
         .chapter {
             .part-title {
-                font-family: FOT_DNPShueiGoKinStd-L, mplus-2c-regular, ui-sans-serif;
-                font-weight: 400;
+                font-size: 1.1em;
+                font-family: 'Noto Sans JP', ui-sans-serif;
+                font-weight: 500;
             }
 
             .chapter-item {
                 margin-left: 1em;
-                font-family: HiraginoSans-W2, mplus-2c-light, ui-sans-serif;
+                font-family: Futura, 'Noto Sans JP', ui-sans-serif;
+                font-weight: 400;
+            }
 
-                strong {
-                    font-weight: 400;
-                }
+            .section .chapter-item {
+                font-weight: 300 !important;
             }
         }
     }
