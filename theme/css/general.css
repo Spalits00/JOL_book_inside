@@ -53,12 +53,12 @@ html body h6 code {
   /* Don't change font size in headers. */
   font-size: unset;
 }
-html body h1 :target::before,
-html body h2 :target::before,
-html body h3 :target::before,
-html body h4 :target::before,
-html body h5 :target::before,
-html body h6 :target::before {
+html body h1:target::before,
+html body h2:target::before,
+html body h3:target::before,
+html body h4:target::before,
+html body h5:target::before,
+html body h6:target::before {
   display: inline-block;
   content: "»";
   margin-left: -30px;
@@ -191,6 +191,9 @@ html body details [open] summary {
 .content main .table-wrapper {
   overflow-x: auto;
 }
+.content main a {
+  color: var(--links);
+}
 .content p,
 .content ol,
 .content ul {
@@ -198,20 +201,20 @@ html body details [open] summary {
 }
 .content a {
   text-decoration: none;
-  color: var(--fg) !important;
+  color: var(--fg);
 }
-.content a :hover {
-  text-decoration: underline;
+.content a:hover {
+  text-decoration-line: underline !important;
+  -moz-text-decoration-line: underline !important;
 }
 .content img,
 .content video {
   max-width: 100%;
 }
-.content .header :link,
-.content .header :visited {
+.content .header:link, .content .header:visited {
   color: var(--fg);
 }
-.content .header :visited:hover {
+.content .header:visited:hover {
   text-decoration: none;
 }
 
