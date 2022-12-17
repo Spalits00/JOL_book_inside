@@ -159,6 +159,9 @@ html body details [open] summary {
 .page-wrapper {
   box-sizing: border-box;
 }
+.page-wrapper .nav-wide-wrapper .nav-chapters {
+  max-width: 90px !important;
+}
 .page-wrapper .page {
   outline: 0;
   padding: 0 var(--page-padding);
@@ -179,7 +182,7 @@ html body details [open] summary {
   padding: 0 5px 50px 5px;
 }
 .content main {
-  margin-left: auto;
+  margin-left: 90px;
   margin-right: auto;
   max-width: var(--content-max-width);
   /* make long words/inline code not x overflow */
