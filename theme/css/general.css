@@ -193,7 +193,8 @@ html body details [open] summary {
 .content main h2 {
   font-family: var(--fonts-heading);
 }
-.content main strong {
+.content main strong,
+.content main th {
   font-family: var(--fonts-strong);
   font-weight: 500;
 }

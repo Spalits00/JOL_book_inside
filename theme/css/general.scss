@@ -224,7 +224,8 @@ html {
             font-family: var(--fonts-heading);
         }
 
-        strong {
+        strong,
+        th {
             font-family: var(--fonts-strong);
             font-weight: 500;
         }
