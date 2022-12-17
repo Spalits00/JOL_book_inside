@@ -39,6 +39,7 @@ term {
   font-size: 0.6em;
   font-weight: 400;
   color: var(--bg);
+  display: inline-block;
 }
 
 img[alt=spa_icon] {
