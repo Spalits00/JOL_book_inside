@@ -6,7 +6,7 @@ src = "src"
 title = "The Book of げんおり！"
 
 [output.html]
-additional-css = ["theme/custom.css", "./theme/catppuccin.css", "./theme/catppuccin-highlight.css"]
+additional-css = ["./theme/catppuccin.css", "./theme/catppuccin-highlight.css"]
 
 [preprocessor]
 
