@@ -31,6 +31,16 @@ kenten {
   text-emphasis: filled sesame;
 }
 
+term {
+  vertical-align: 0.25em;
+  padding: 0 0.3em 0.1em 0.3em;
+  border-radius: 0.2em;
+  font-family: var(--fonts-ui);
+  font-size: 0.6em;
+  font-weight: 400;
+  color: var(--bg);
+}
+
 img[alt=spa_icon] {
   width: 18em;
   border-radius: 9em;
@@ -242,11 +252,15 @@ table td {
   padding: 3px 20px;
   border: 1px var(--table-border-color) solid;
 }
+table th {
+  text-align: right !important;
+  padding: 3px 20px;
+  background: var(--table-header-bg);
+}
 table thead {
   background: var(--table-header-bg);
 }
 table thead td {
-  font-weight: 700;
   border: none;
 }
 table thead th {
